@@ -1,0 +1,19 @@
+<div class="card-columns">
+    
+   <div *ngFor="let release of newReleases" class="card">
+      <img  class="card-img-top" [src]="release.images[0].url" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"> {{release.name}} </h5>
+        <p class="card-text">
+            <span *ngFor="let artista of release.artists" class="badge badge-pill badge-secondary">
+                {{artista.name}}
+            </span>
+        </p>
+      </div>
+    </div>
+
+</div>
+
+
+
+
