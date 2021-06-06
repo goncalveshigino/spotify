@@ -16,7 +16,7 @@ export class NoimagePipe implements PipeTransform {
     if (images.length > 0) {
       return images[0].url;
     } else {
-      return 'assets/noimage.png';
+      return 'assets/img/noimage.png';
     }
 
   }
